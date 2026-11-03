@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Wien - Produk Detail Card</title>
+    <link rel="stylesheet" href="style-sneakers.css">
+</head>
+<body>
+    <div class="card">
+
+        <!-- GAMBAR PRODUK -->
+         <img src="adidas-wien.jpeg" alt="Adidas Wien" class="product-image">
+
+        <!-- INFORMASI PRODUK -->
+         <div class="product-info">
+
+            <p class="product-name">ADIDAS ORIGINAL</p>
+            <h2>Adidas Wien</h2>
+            <p class="description">Hadir dengan desain klasik yang terinspirasi
+                dari gaya retro. Adidas Wien memadukan tampila sederhana, material
+                berkualitas, dan kenyamanan untuk menemani aktivitas sehari-hari.</p>
+
+        <!-- HARGA PRODUK -->
+         <div class="price">
+            <span class="current" RP>Rp 2.500.000</span>
+            <span class="old">Rp 2.800.000</span>
+        </div>
+        <!-- PILIHAN UKURAN -->
+         <p class="sizes">Pilih Ukuran:</p>
+        <div class="size-options">
+            <button type="button" onclick="pilihUkuran(this)">39</button>
+            <button type="button" onclick="pilihUkuran(this)">40</button>
+            <button type="button" onclick="pilihUkuran(this)">41</button>
+            <button type="button" onclick="pilihUkuran(this)">42</button>
+            <button type="button" onclick="pilihUkuran(this)">43</button>
+        </div>
+        <!-- TOMBOL KERANJANG -->
+        <button class="btn-cart">Tambah ke Keranjang</button>
+        </div>
+    </div>
+    <script>
+    function pilihUkuran(tombol) {
+    document.querySelectorAll('.size-options button')
+        .forEach(btn => btn.classList.remove('active'));
+
+    tombol.classList.add('active');
+    }
+</script>
+    </body >
+</html>

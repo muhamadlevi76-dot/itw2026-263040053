@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* KARTU PRODUK */
+.card {
+    width: 300px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #dddddd;
+    border-radius: 15px;
+}
+
+
+/* GAMBAR PRODUK */
+.product-image {
+    width: 100%;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    outline: 2px solid transparent;
+}
+
+
+/* INFO PRODUK */
+.product-info {
+    margin-top: 15px;
+}
+
+
+.product-name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #735252;
+}
+
+
+.card h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+
+/* DESKRIPSI PRODUK */
+.product-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666; 
+    margin-top: 15px;
+}
+
+
+/* HARGA PRODUK */  
+.price {
+    display: flex;
+    align-items: center;
+    
+}  
+
+
+.curent {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+}
+
+
+.old {
+    font-size: 14px;
+    color: #999999;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+
+
+/* PILIHAN UKURAN */
+.sizes {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.size-options button {
+    width: 55px;
+    height: 50px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: white;
+    color: #222222;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* UKURAN YANG DIPILIH */
+.size-options button.active {
+    background-color: #222222;
+    color: white;
+    border-color: #222222;
+}
+
+/* TOMBOL BELI */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #222222;
+    color: white;
+    border: 2px solid #222222;
+    border-radius: 10px;
+    cursor: pointer;
+}
