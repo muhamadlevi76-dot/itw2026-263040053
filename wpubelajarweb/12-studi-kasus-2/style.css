@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222222;
+    line-height: 1.6;
+}
+
+.header,
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.header {
+    padding: 45px 20px 35px;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #777777;
+    margin-bottom: 18px;
+}
+
+.genre span {
+    display: inline-block;
+    padding: 6px 18px;
+    margin: 5px;
+    border: 1px solid #06b6d4;
+    border-radius: 30px;
+    background-color: #e0faff;
+    color: #0891b2;
+    font-size: 13px;
+}
+
+.profile-section,
+.stats-section,
+.album-section,
+.social-section {
+    width: 100%;
+    text-align: center;
+}
+
+.profile-section {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 35px;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border: 6px solid #06b6d4;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-label {
+    margin-bottom: 12px;
+    color: #0891b2;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.profile-card h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.profile-card p:not(.profile-label) {
+    margin-bottom: 15px;
+    color: #666666;
+    text-align: justify;
+}
+
+.stats-section {
+    padding: 25px 20px;
+    margin-bottom: 40px;
+}
+
+.stats-section h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.stats-container,
+.album-container {
+    width: 100%;
+    text-align: center;
+}
+
+.stats-card,
+.album-card {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stats-card {
+    width: 220px;
+    padding: 25px 15px;
+    margin: 10px;
+}
+
+.stats-card h3 {
+    margin-bottom: 5px;
+    color: #06b6d4;
+    font-size: 28px;
+}
+
+.stats-card p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.album-section {
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+
+.album-section h2 {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #777777;
+}
+
+.album-card {
+    width: 250px;
+    height: 450px;
+    padding: 15px;
+    margin: 12px;
+}
+
+.album-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.album-card h3 {
+    height: 55px;
+    margin-bottom: 5px;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.release-year {
+    margin-bottom: 15px;
+    color: #777777;
+}
+
+.listen-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 9px 22px;
+    border-radius: 25px;
+    background-color: #06b6d4;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.listen-button:hover {
+    background-color: #0891b2;
+}
+
+.social-section {
+    padding: 35px 20px;
+    margin-bottom: 30px;
+}
+
+.social-section h2 {
+    margin-bottom: 8px;
+    font-size: 27px;
+}
+
+.social-section p {
+    margin-bottom: 20px;
+    color: #777777;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 23px;
+    border: 1px solid #06b6d4;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #0891b2;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: #06b6d4;
+    color: #ffffff;
+}
+
+.footer {
+    padding: 30px 20px;
+    border-top: 3px solid #06b6d4;
+}
+
+.footer h3 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.footer p {
+    margin: 4px;
+    color: #777777;
+    font-size: 13px;
+}
+
+.footer a {
+    color: #0891b2;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .profile-card {
+        padding: 22px;
+    }
+
+    .stats-card,
+    .album-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
